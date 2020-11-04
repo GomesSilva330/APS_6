@@ -1,6 +1,7 @@
 ﻿using DigitalDetector.infra.service;
 using DigitalDetector.models;
 using DigitalDetector.shared;
+using DigitalDetector.shared.combo;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -25,6 +26,12 @@ namespace DigitalDetector.app
                 valid = false;
 
             }
+            if (string.IsNullOrWhiteSpace(cmbNivel.SelectedItem.ToString()))
+            {
+                MessageBox.Show("Selecione um nível de acesso!", "Problemas...", MessageBoxButtons.OK);
+                valid = false;
+
+            }
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 MessageBox.Show("Digite um Nome para o usuário!", "Problemas...", MessageBoxButtons.OK);
@@ -43,7 +50,8 @@ namespace DigitalDetector.app
             {
                 Id = Guid.NewGuid(),
                 Nome = txtNome.Text,
-                Digital = base64
+                Digital = base64,
+                Nivel = (ENivelUsuario)((ComboBoxItem)cmbNivel.SelectedItem).Value
             });
             
             if (!ok)
@@ -68,6 +76,7 @@ namespace DigitalDetector.app
             base64 = "";
             txtNome.Text = "";
             pbDigital.ImageLocation = "";
+            Tools.CarregarComboNivel(cmbNivel);
         }
 
         private void BtnAtualizar_click(object sender, EventArgs e)
@@ -77,11 +86,11 @@ namespace DigitalDetector.app
 
             Usuario_Service _repo = new Usuario_Service();
 
-            var usuario = _repo.CarregarUsuario(txtNome.Text, base64);
+            var usuario = _repo.CarregarUsuario(base64, (ENivelUsuario)((ComboBoxItem)cmbNivel.SelectedItem).Value);
 
             if (usuario == null)
             {
-                MessageBox.Show("Usuario não encontrado...", "Problemas...", MessageBoxButtons.OK);
+                MessageBox.Show("Digital não encontrada, cadastre-a primeiro!", "Problemas...", MessageBoxButtons.OK);
                 return;
             }
 

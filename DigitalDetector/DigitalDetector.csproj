@@ -11,7 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="SourceAFIS" Version="1.7.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <HintPath>..\PresentationCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
  

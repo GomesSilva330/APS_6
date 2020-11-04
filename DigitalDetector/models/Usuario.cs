@@ -9,5 +9,6 @@ namespace DigitalDetector.models
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public string Digital { get; set; }
+        public ENivelUsuario? Nivel { get; set; }
     }
 }

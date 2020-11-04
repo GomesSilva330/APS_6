@@ -11,7 +11,6 @@ C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.csproj.GenerateResource.cache
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.AssemblyInfoInputs.cache
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.AssemblyInfo.cs
-C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.csproj.CoreCompileInputs.cache
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.csproj.CopyComplete
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.dll
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.pdb
@@ -20,4 +19,6 @@ C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\Debug\netcoreapp3.1\
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\Debug\netcoreapp3.1\DigitalDetector.runtimeconfig.dev.json
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\Debug\netcoreapp3.1\DigitalDetector.pdb
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.genruntimeconfig.cache
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\Debug\netcoreapp3.1\SourceAFIS.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.csproj.CoreCompileInputs.cache
 C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\obj\Debug\netcoreapp3.1\DigitalDetector.csprojAssemblyReference.cache

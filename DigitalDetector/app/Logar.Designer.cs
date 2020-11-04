@@ -33,8 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
             this.pcDigital = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcDigital)).BeginInit();
@@ -42,7 +44,7 @@
             // 
             // btnCarregarDigital
             // 
-            this.btnCarregarDigital.Location = new System.Drawing.Point(17, 91);
+            this.btnCarregarDigital.Location = new System.Drawing.Point(17, 75);
             this.btnCarregarDigital.Name = "btnCarregarDigital";
             this.btnCarregarDigital.Size = new System.Drawing.Size(133, 23);
             this.btnCarregarDigital.TabIndex = 0;
@@ -82,41 +84,61 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtNome);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.cmbNivel);
             this.groupBox1.Controls.Add(this.pcDigital);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.btnCarregarDigital);
             this.groupBox1.Location = new System.Drawing.Point(12, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(368, 541);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Digite suas Credenciais:";
+            this.groupBox1.Text = "Preencha as informações:";
+            // 
+            // cmbNivel
+            // 
+            this.cmbNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Location = new System.Drawing.Point(17, 46);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(133, 23);
+            this.cmbNivel.TabIndex = 5;
             // 
             // pcDigital
             // 
             this.pcDigital.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pcDigital.Location = new System.Drawing.Point(17, 120);
+            this.pcDigital.Location = new System.Drawing.Point(17, 104);
             this.pcDigital.Name = "pcDigital";
-            this.pcDigital.Size = new System.Drawing.Size(331, 404);
+            this.pcDigital.Size = new System.Drawing.Size(331, 420);
             this.pcDigital.TabIndex = 4;
             this.pcDigital.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 44);
+            this.label2.Location = new System.Drawing.Point(17, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 15);
+            this.label2.Size = new System.Drawing.Size(93, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Digite seu Usuário:";
+            this.label2.Text = "Nível de Acesso:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(157, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Digite seu Nome:";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(17, 62);
+            this.txtNome.Location = new System.Drawing.Point(157, 46);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(331, 23);
-            this.txtNome.TabIndex = 2;
+            this.txtNome.Size = new System.Drawing.Size(191, 23);
+            this.txtNome.TabIndex = 7;
             // 
             // Logar
             // 
@@ -128,7 +150,9 @@
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.button1);
             this.Name = "Logar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logar";
+            this.Load += new System.EventHandler(this.Logar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcDigital)).EndInit();
@@ -144,8 +168,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pcDigital;
+        private System.Windows.Forms.ComboBox cmbNivel;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label3;
     }
 }

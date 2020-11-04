@@ -69,6 +69,15 @@
           }
         }
       },
+      "SourceAFIS/1.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/net451/SourceAFIS.dll": {}
+        },
+        "runtime": {
+          "lib/net451/SourceAFIS.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.8.2": {
         "type": "package",
         "dependencies": {
@@ -261,6 +270,23 @@
         "version.txt"
       ]
     },
+    "SourceAFIS/1.7.0": {
+      "sha512": "H30ai4zSUpFiTUSMMJe+lOxX8rGidatONPXN+MZIPW8WpyxM7chWLTY9WnBz9tisYdMfwiOxXtl3mO9qxBKjJA==",
+      "type": "package",
+      "path": "sourceafis/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SourceAFIS.dll",
+        "lib/net40/SourceAFIS.xml",
+        "lib/net45/SourceAFIS.dll",
+        "lib/net45/SourceAFIS.xml",
+        "lib/net451/SourceAFIS.dll",
+        "lib/net451/SourceAFIS.xml",
+        "sourceafis.1.7.0.nupkg.sha512",
+        "sourceafis.nuspec"
+      ]
+    },
     "System.Data.SqlClient/4.8.2": {
       "sha512": "80vGtW6uLB4AkyrdVuKTXYUyuXDPAsSKbTVfvjndZaRAYxzFzWhJbvUfeAKrN+128ycWZjLIAl61dFUwWHOOTw==",
       "type": "package",
@@ -450,6 +476,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "SourceAFIS >= 1.7.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
@@ -490,6 +517,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "SourceAFIS": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.2, )"
@@ -516,5 +547,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SourceAFIS 1.7.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "SourceAFIS",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

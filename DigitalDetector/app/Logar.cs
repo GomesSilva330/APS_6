@@ -1,11 +1,8 @@
 ﻿using DigitalDetector.infra.service;
 using DigitalDetector.shared;
+using DigitalDetector.shared.combo;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace DigitalDetector.app
@@ -28,15 +25,16 @@ namespace DigitalDetector.app
             }
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                MessageBox.Show("Digite um Nome para o usuário!", "Problemas...", MessageBoxButtons.OK);
+                MessageBox.Show("Carregue a digital primeiro!", "Problemas...", MessageBoxButtons.OK);
                 valid = false;
+
             }
             return valid;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
+
             CriarUsuario criarUsuario = new CriarUsuario();
             criarUsuario.Show();
         }
@@ -45,23 +43,31 @@ namespace DigitalDetector.app
         {
             if (!Validar())
                 return;
-
+            var comboitem = (ComboBoxItem)cmbNivel.SelectedItem;
             Usuario_Service _repo = new Usuario_Service();
 
-            var usuario = _repo.CarregarUsuario(txtNome.Text, base64);
+            var usuarios = _repo.CarregarTodosUsuario();
 
-            if (usuario == null)
-            {
-                MessageBox.Show("Login incorreto, tente novamente!", "Problemas...", MessageBoxButtons.OK);
+            var usuario = Tools.CompararDigital(txtNome.Text, base64, usuarios.Select(x => x.Digital).ToList());
+            if (usuario == null) { 
+                MessageBox.Show($"Digital não reconhecida com a base de dados!", "Problemas...!", MessageBoxButtons.OK);
                 return;
             }
 
-            MessageBox.Show("Usuário Logado com sucesso!", "Problemas...", MessageBoxButtons.OK);
+            if ((int)usuario.Nivel >= comboitem.Value)
+                MessageBox.Show($"Usuário Logado no nível {comboitem.Text} com sucesso!", "Sucesso!!", MessageBoxButtons.OK);
+            else
+                MessageBox.Show($"Usuário não tem permissão para acessar o {comboitem.Text}", "Problemas...!", MessageBoxButtons.OK);
         }
 
         private void btnCarregarDigital_Click(object sender, EventArgs e)
         {
             base64 = Tools.CarregarDigital(pcDigital);
+        }
+
+        private void Logar_Load(object sender, EventArgs e)
+        {
+            Tools.CarregarComboNivel(cmbNivel);
         }
     }
 }
