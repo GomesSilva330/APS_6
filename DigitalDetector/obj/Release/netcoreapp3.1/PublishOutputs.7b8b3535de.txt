@@ -1,0 +1,12 @@
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\DigitalDetector.exe
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\DigitalDetector.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\DigitalDetector.deps.json
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\DigitalDetector.runtimeconfig.json
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\DigitalDetector.pdb
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\SourceAFIS.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\System.Data.SqlClient.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\runtimes\win-arm64\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\runtimes\win-x64\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\runtimes\win-x86\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\PublicOneClick\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

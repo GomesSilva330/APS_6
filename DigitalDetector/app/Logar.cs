@@ -25,7 +25,8 @@ namespace DigitalDetector.app
             }
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                MessageBox.Show("Carregue a digital primeiro!", "Problemas...", MessageBoxButtons.OK);
+                MessageBox.Show("Digite o seu nome de usuário", "Problemas...", MessageBoxButtons.OK);
+                txtNome.Focus();
                 valid = false;
 
             }

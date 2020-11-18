@@ -89,12 +89,13 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(190, 519);
+            this.btnAtualizar.Location = new System.Drawing.Point(105, 519);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(133, 23);
             this.btnAtualizar.TabIndex = 0;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Visible = false;
             this.btnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_click);
             // 
             // pbDigital
@@ -108,7 +109,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(30, 519);
+            this.btnEnviar.Location = new System.Drawing.Point(105, 519);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(133, 23);
             this.btnEnviar.TabIndex = 0;
@@ -146,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 632);
+            this.ClientSize = new System.Drawing.Size(394, 667);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "CriarUsuario";

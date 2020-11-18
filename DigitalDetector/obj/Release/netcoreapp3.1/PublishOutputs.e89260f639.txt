@@ -1,0 +1,12 @@
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\DigitalDetector.exe
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\DigitalDetector.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\DigitalDetector.deps.json
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\DigitalDetector.runtimeconfig.json
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\DigitalDetector.pdb
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\SourceAFIS.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\System.Data.SqlClient.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\runtimes\win-arm64\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\runtimes\win-x64\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\runtimes\win-x86\native\sni.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\repos\school\aps-6º\DigitalDetector\DigitalDetector\bin\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
